@@ -1,10 +1,10 @@
 #
-
+# DEVELOPMENT
 # -------------------------------------------------------------------------- #
 
 # DISCLAIMER:       This file is part of LOGIK-PROJEKT.
-#                   Copyright © 2024 man-made-mekanyzms
-                
+#                   Copyright Strength In Numbers © 2025
+               
 #                   LOGIK-PROJEKT creates directories, files, scripts & tools
 #                   for use with Autodesk Flame and other software.
 
@@ -14,7 +14,7 @@
 #                   of the GNU General Public License as published by the
 #                   Free Software Foundation, either version 3 of the License,
 #                   or any later version.
- 
+
 #                   This program is distributed in the hope that it will be
 #                   useful, but WITHOUT ANY WARRANTY; without even the
 #                   implied warranty of MERCHANTABILITY or FITNESS FOR A
@@ -26,7 +26,7 @@
 #                   Public License along with this program.
 
 #                   If not, see <https://www.gnu.org/licenses/>.
-                
+               
 #                   Contact: phil_man@mac.com
 
 # -------------------------------------------------------------------------- #
@@ -72,7 +72,7 @@ def get_base_path():
                 os.path.dirname(__file__), '..', '..', '..'
             )
         )
-    
+   
 # -------------------------------------------------------------------------- #
 
 def get_resource_path(relative_path):
@@ -295,22 +295,11 @@ def run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator)
 
     # ---------------------------------------------------------------------- #
 
-    # # THIS IS THE COMMAND FOR 2025
-
-    # # Create a logik projekt flame project node using wiretap
-    # /opt/Autodesk/wiretap/tools/current/wiretap_create_node \\
-    # -n /volumes/stonefs \\
-    # -d "{the_projekt_flame_name}" \\
-    # -s XML \\
-    # -f "{projekt_xml_path}"
-
-    # ---------------------------------------------------------------------- #
-
     # THIS IS THE COMMAND FOR 2026
 
     # Create a logik projekt flame project node using wiretap
     /opt/Autodesk/wiretap/tools/current/wiretap_create_node \\
-    -h 127.0.0.1 \\
+    -h 127.0.0.1:IFFFS \\
     -n /projects \\
     -t PROJECT \\
     -d "{the_projekt_flame_name}" \\
@@ -343,10 +332,10 @@ if __name__ == "__main__":
     run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator)
 
 # ========================================================================== #
-# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
+# 53 54 52 45 4E 47 54 48 2D 49 4E 2D 4E 55 4D 42 45 52 53 C2 A9 32 30 32 35 #
 # ========================================================================== #
 
-# Changelist:       
+# Changelist:      
 
 # -------------------------------------------------------------------------- #
 # version:          0.0.1
@@ -378,6 +367,6 @@ if __name__ == "__main__":
 # comments:         Preparation for future features
 # -------------------------------------------------------------------------- #
 # version:          2.0.0
-# modified:         2024-12-31 - 11:17:23
+# modified:         2024-12-31 - 10:35:38
 # comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

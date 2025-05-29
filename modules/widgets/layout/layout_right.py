@@ -1,10 +1,10 @@
 #
-
+# DEVELOPMENT
 # -------------------------------------------------------------------------- #
 
 # DISCLAIMER:       This file is part of LOGIK-PROJEKT.
-#                   Copyright © 2024 man-made-mekanyzms
-                
+#                   Copyright Strength In Numbers © 2025
+               
 #                   LOGIK-PROJEKT creates directories, files, scripts & tools
 #                   for use with Autodesk Flame and other software.
 
@@ -14,7 +14,7 @@
 #                   of the GNU General Public License as published by the
 #                   Free Software Foundation, either version 3 of the License,
 #                   or any later version.
- 
+
 #                   This program is distributed in the hope that it will be
 #                   useful, but WITHOUT ANY WARRANTY; without even the
 #                   implied warranty of MERCHANTABILITY or FITNESS FOR A
@@ -26,7 +26,7 @@
 #                   Public License along with this program.
 
 #                   If not, see <https://www.gnu.org/licenses/>.
-                
+               
 #                   Contact: phil_man@mac.com
 
 # -------------------------------------------------------------------------- #
@@ -72,7 +72,7 @@ def get_base_path():
                 os.path.dirname(__file__), '..', '..', '..'
             )
         )
-    
+   
 # -------------------------------------------------------------------------- #
 
 def get_resource_path(relative_path):
@@ -128,10 +128,6 @@ from functions.get.get_flame_software import (
 from functions.get.get_framestores import get_framestore_list
 
 from functions.string.string_utilities import string_clean
-from modules.functions.string.string_utilities import string_clean_camel
-from modules.functions.string.string_utilities import string_clean_lower
-from modules.functions.string.string_utilities import string_clean_uc
-from modules.functions.string.string_utilities import string_clean_upper
 
 from widgets.line_edit.flame_projekt_directory import WidgetFlameProjektDirectory
 from widgets.line_edit.flame_projekt_media_cache import WidgetFlameProjektMediaCache
@@ -256,7 +252,7 @@ class WidgetLayoutRight(QWidget):
         self.combo_box_software_version = self.add_combobox("Software Version:")
         self.combo_box_framestore = self.add_combobox("Framestore:")
         self.add_labeled_widget("Projekt Flame Directory:", WidgetFlameProjektDirectory())
-        self.add_labeled_widget("Setups Directory:", WidgetFlameProjektSetupsDir()) 
+        self.add_labeled_widget("Setups Directory:", WidgetFlameProjektSetupsDir())
         self.add_labeled_widget("Media Cache:", WidgetFlameProjektMediaCache())
         self.environment_summary = self.add_text_edit("Environment Summary:", True, fixed_height=220)
         # self.create_projekt_button = self.add_button("Create Projekt")
@@ -442,7 +438,7 @@ class WidgetLayoutRight(QWidget):
                     self.update_projekt_summary_from_imported(data)
             except Exception as e:
                 QMessageBox.critical(self, "Import Error", f"An error occurred while importing the template:\n{e}")
-                
+               
     def update_from_layout_left(self, data):
         self.update_projekt_summary(data)
 
@@ -473,15 +469,11 @@ class WidgetLayoutRight(QWidget):
     #     self.command_monitor.setPlainText("Command Monitor initialized.")
 
     def load_command_monitor(self):
-        self.update_command_monitor("Process Monitor initialized.")
+        self.update_command_monitor("LOGIK PROJEKT is initialized.")
         self.update_command_monitor("")
-        self.update_command_monitor("Creating a PROJEKT will take a heartbeat.")
+        self.update_command_monitor("Creating your LOGIK PROJEKT will take a moment.")
         self.update_command_monitor("")
-        self.update_command_monitor("PROJEKT will process your parameters.")
-        self.update_command_monitor("")
-        self.update_command_monitor("PROJEKT will try to launch FLAME.")
-        self.update_command_monitor("")
-        self.update_command_monitor("Please be patient...")
+        self.update_command_monitor("Breathe deeply and make a happy wish...")
         self.update_command_monitor("")
 
 # =========================================================================== #
@@ -614,12 +606,12 @@ class WidgetLayoutRight(QWidget):
     #         os.environ["PATH"] += os.pathsep + os.path.dirname(python_executable)
 
     #         # Execute the script and capture output
-    #         result = subprocess.run([python_executable, projekt_creation_script_path], 
-    #                                 input=json.dumps(projekt_info), 
-    #                                 text=True, 
-    #                                 capture_output=True, 
+    #         result = subprocess.run([python_executable, projekt_creation_script_path],
+    #                                 input=json.dumps(projekt_info),
+    #                                 text=True,
+    #                                 capture_output=True,
     #                                 check=True)
-            
+           
     #         # Update Command Monitor with script output
     #         self.update_command_monitor(f"  Executed {projekt_creation_script_path}:\n{result.stdout}")
     #     except subprocess.CalledProcessError as e:
@@ -642,12 +634,12 @@ class WidgetLayoutRight(QWidget):
     #         os.environ["PATH"] += os.pathsep + os.path.dirname(python_executable)
 
     #         # Execute the script and capture output
-    #         result = subprocess.run([python_executable, flame_launcher_script_path], 
-    #                                 input=json.dumps(projekt_info), 
-    #                                 text=True, 
-    #                                 capture_output=True, 
+    #         result = subprocess.run([python_executable, flame_launcher_script_path],
+    #                                 input=json.dumps(projekt_info),
+    #                                 text=True,
+    #                                 capture_output=True,
     #                                 check=True)
-            
+           
     #         # Update Command Monitor with script output
     #         self.update_command_monitor(f"  Executed {flame_launcher_script_path}:\n{result.stdout}")
     #     except subprocess.CalledProcessError as e:
@@ -679,27 +671,27 @@ class WidgetLayoutRight(QWidget):
             return
 
         self.update_command_monitor("Starting PROJEKT creation...")
-        
+       
         # Gather information from variables
         projekt_info = self.gather_projekt_info()
-        
+       
         # Initialize QProcess if not already done
         if not hasattr(self, 'processes'):
             self.processes = []
-        
+       
         # Create processes for both scripts
-        for script_path in ['modules/functions/create/create_projekt.py', 
+        for script_path in ['modules/functions/create/create_projekt.py',
                         'modules/functions/run/run_flame_launcher_script.py']:
             process = QProcess()
             process.setProcessChannelMode(QProcess.MergedChannels)
-            
+           
             # Connect signals for output handling
             process.readyReadStandardOutput.connect(
                 lambda p=process: self.handle_process_output(p))
             process.finished.connect(
-                lambda code, status, p=process, script=script_path: 
+                lambda code, status, p=process, script=script_path:
                 self.handle_process_finished(code, status, p, script))
-            
+           
             self.processes.append((process, script_path))
 
         # Start the first process
@@ -709,16 +701,16 @@ class WidgetLayoutRight(QWidget):
         if not self.processes:
             self.update_command_monitor("All processes completed.")
             return
-            
+           
         process, script_path = self.processes[0]
         python_executable = "/usr/bin/python3"
-        
+       
         try:
             projekt_info = self.gather_projekt_info()
             process.start(python_executable, [script_path])
             process.write(json.dumps(projekt_info).encode())
             process.closeWriteChannel()
-            
+           
             self.update_command_monitor(f"Started execution of {script_path}")
         except Exception as e:
             self.update_command_monitor(f"Error starting {script_path}: {str(e)}")
@@ -734,7 +726,7 @@ class WidgetLayoutRight(QWidget):
             self.update_command_monitor(f"Successfully completed {script_path}")
         else:
             self.update_command_monitor(f"Error executing {script_path}. Exit code: {exit_code}")
-        
+       
         # Remove the completed process and start the next one
         self.processes.pop(0)
         self.start_next_process()
@@ -766,10 +758,12 @@ class WidgetLayoutRight(QWidget):
                 env_dict[key.strip()] = value.strip()
 
         the_projekt_flame_name = env_dict.get("Projekt Flame Name", "")
-        xml_project_dir = f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
+        # xml_project_dir = f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
+        xml_project_dir = f"/opt/Autodesk/project/{the_projekt_flame_name}"
         xml_setup_dir = f"{xml_project_dir}/setups"
         xml_media_dir = f"{xml_project_dir}/media"
-        xml_ocio_config = f"/opt/Autodesk/colour_mgmt/configs/flame_configs/example_config/config.ocio"
+        # xml_ocio_config = f"/opt/Autodesk/colour_mgmt/configs/flame_configs/example_config/config.ocio"
+        xml_ocio_config = f"/opt/Autodesk/colour_mgmt/configs/flame_configs/2026.0/aces2.0_config/config.ocio"
         xml_intermediates_profile = f"0:596088"
 
         return {
@@ -818,10 +812,10 @@ if __name__ == "__main__":
     sys.exit(app.exec())
 
 # ========================================================================== #
-# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
+# 53 54 52 45 4E 47 54 48 2D 49 4E 2D 4E 55 4D 42 45 52 53 C2 A9 32 30 32 35 #
 # ========================================================================== #
 
-# Changelist:       
+# Changelist:      
 
 # -------------------------------------------------------------------------- #
 # version:          0.0.1
@@ -849,10 +843,10 @@ if __name__ == "__main__":
 # comments:         prep for release - code appears to be functional
 # -------------------------------------------------------------------------- #
 # version:          1.9.9
-# modified:         2024-12-25 - 09:50:18
+# modified:         2024-12-25 - 09:50:16
 # comments:         Preparation for future features
 # -------------------------------------------------------------------------- #
 # version:          2.0.0
-# modified:         2024-12-31 - 11:17:26
+# modified:         2024-12-31 - 10:35:43
 # comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

@@ -1,10 +1,10 @@
 #
-
+# DEVELOPMENT
 # -------------------------------------------------------------------------- #
 
 # DISCLAIMER:       This file is part of LOGIK-PROJEKT.
-#                   Copyright © 2024 man-made-mekanyzms
-                
+#                   Copyright Strength In Numbers © 2025
+               
 #                   LOGIK-PROJEKT creates directories, files, scripts & tools
 #                   for use with Autodesk Flame and other software.
 
@@ -14,7 +14,7 @@
 #                   of the GNU General Public License as published by the
 #                   Free Software Foundation, either version 3 of the License,
 #                   or any later version.
- 
+
 #                   This program is distributed in the hope that it will be
 #                   useful, but WITHOUT ANY WARRANTY; without even the
 #                   implied warranty of MERCHANTABILITY or FITNESS FOR A
@@ -26,7 +26,7 @@
 #                   Public License along with this program.
 
 #                   If not, see <https://www.gnu.org/licenses/>.
-                
+               
 #                   Contact: phil_man@mac.com
 
 # -------------------------------------------------------------------------- #
@@ -72,7 +72,7 @@ def get_base_path():
                 os.path.dirname(__file__), '..', '..', '..'
             )
         )
-    
+   
 # -------------------------------------------------------------------------- #
 
 def get_resource_path(relative_path):
@@ -203,7 +203,7 @@ def sync_color_policies(
         the_sanitized_version,
         separator,
     ):
-    
+   
     # Nested function to generate backup filename with current date
     def generate_backup_filename(filepath):
         # Get the current date
@@ -219,12 +219,20 @@ def sync_color_policies(
     # Set the projekt_flame_dir
     the_projekt_flame_dir =f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
 
-    # Define the projekt flame setups directory for flame 2025
-    the_projekt_flame_setups_dir = the_projekt_flame_dir
+# --------------- ENABLE THIS FUNCTION FOR FLAME 2025 ---------------------- #
+
+    # # Define the projekt flame setups directory for flame 2025
+    # the_projekt_flame_setups_dir = the_projekt_flame_dir
 
 # --------------- ENABLE THIS FUNCTION FOR FLAME 2026 ---------------------- #
 
-    # # Define the projekt flame setups directory based on the flame version
+    # Define the projekt flame setups directory based on the flame version
+    the_projekt_flame_setups_dir = os.path.join(
+        the_projekt_flame_dir,
+        'setups'
+    )
+
+    # # Experimental shit that keeps changing
     # if the_sanitized_version.startswith("2025"):
     #     the_projekt_flame_setups_dir = the_projekt_flame_dir
     # else:
@@ -327,10 +335,10 @@ if __name__ == "__main__":
     main()
 
 # ========================================================================== #
-# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
+# 53 54 52 45 4E 47 54 48 2D 49 4E 2D 4E 55 4D 42 45 52 53 C2 A9 32 30 32 35 #
 # ========================================================================== #
 
-# Changelist:       
+# Changelist:      
 
 # -------------------------------------------------------------------------- #
 # version:          0.0.1
@@ -358,10 +366,10 @@ if __name__ == "__main__":
 # comments:         prep for release - code appears to be functional
 # -------------------------------------------------------------------------- #
 # version:          1.9.9
-# modified:         2024-12-25 - 09:50:15
+# modified:         2024-12-25 - 09:50:16
 # comments:         Preparation for future features
 # -------------------------------------------------------------------------- #
 # version:          2.0.0
-# modified:         2024-12-31 - 11:17:22
+# modified:         2024-12-31 - 10:35:37
 # comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

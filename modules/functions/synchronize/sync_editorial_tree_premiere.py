@@ -1,10 +1,10 @@
 #
-# LOGIK-PROJEKT-DXS
+# DEVELOPMENT
 # -------------------------------------------------------------------------- #
 
 # DISCLAIMER:       This file is part of LOGIK-PROJEKT.
-#                   Copyright © 2024 man-made-mekanyzms
-                
+#                   Copyright Strength In Numbers © 2025
+               
 #                   LOGIK-PROJEKT creates directories, files, scripts & tools
 #                   LOGIK-PROJEKT creates editorial_dirs_premiere, files, scripts & tools
 #                   for use with Autodesk Flame and other software.
@@ -15,7 +15,7 @@
 #                   of the GNU General Public License as published by the
 #                   Free Software Foundation, either version 3 of the License,
 #                   or any later version.
- 
+
 #                   This program is distributed in the hope that it will be
 #                   useful, but WITHOUT ANY WARRANTY; without even the
 #                   implied warranty of MERCHANTABILITY or FITNESS FOR A
@@ -27,7 +27,7 @@
 #                   Public License along with this program.
 
 #                   If not, see <https://www.gnu.org/licenses/>.
-                
+               
 #                   Contact: phil_man@mac.com
 
 # -------------------------------------------------------------------------- #
@@ -49,21 +49,6 @@ import os
 import platform
 import shutil
 import sys
-import logging
-
-# -----------------------------------------------------------------------------#
-#protect this folder frrom being overwritten if it alreayd exists
-def safe_mkdir(path):
-    if not os.path.exists(path):
-        os.makedirs(path)
-        print(f"Created directory: {path}")
-    else:
-        print(f"Directory exists, skipping: {path}")
-
-def safe_rmtree(path):
-    if os.path.exists(path):
-        print(f"Skipping deletion: {path} already exists.")
-        return  # or raise an exception if this is not expected
 
 # -------------------------------------------------------------------------- #
 
@@ -76,7 +61,7 @@ def get_base_path():
                 os.path.dirname(__file__), '..', '..', '..'
             )
         )
-    
+   
 # -------------------------------------------------------------------------- #
 
 def get_resource_path(relative_path):
@@ -167,7 +152,7 @@ def sync_editorial_tree_premiere(
     Function to create the directory structure for Premiere projects,
     set up symbolic links to asset directories, and copy template resources.
     """
-    
+   
     # # Nested function to generate backup name with current date
     # def generate_backup_name(path):
     #     date_str = datetime.datetime.now().strftime("%Y_%m_%d")
@@ -287,12 +272,12 @@ def sync_editorial_tree_premiere(
     os.umask(0)
 
     # Create the base premiere directory if it doesn't exist
-    safe_mkdir(premiere_dir)
+    os.makedirs(premiere_dir, exist_ok=True)
 
     # Create main folders
     for folder in premiere_folders:
         folder_path = os.path.join(premiere_dir, folder)
-        
+       
         # # If directory exists, back it up
         # if os.path.exists(folder_path):
         #     backup_path = generate_backup_name(folder_path)
@@ -303,7 +288,7 @@ def sync_editorial_tree_premiere(
         #     print()
 
         # Create the directory
-        safe_mkdir(folder_path)
+        os.makedirs(folder_path, exist_ok=True)  # Addendum: exist_ok=True
 
         print(f"  Created directory: {folder_path}")
 
@@ -315,7 +300,7 @@ def sync_editorial_tree_premiere(
         dst_path = link["dst"]
 
         # Create parent directory if it doesn't exist
-        safe_mkdir(os.path.dirname(dst_path))
+        os.makedirs(os.path.dirname(dst_path), exist_ok=True)
 
         # # Remove existing symlink if it exists
         # if os.path.islink(dst_path):
@@ -347,8 +332,7 @@ def sync_editorial_tree_premiere(
         dst_path = template["dst"]
 
         # Create parent directory if it doesn't exist
-        #os.makedirs(os.path.dirname(dst_path), exist_ok=True)
-        safe_mkdir(os.path.dirname(dst_path))
+        os.makedirs(os.path.dirname(dst_path), exist_ok=True)
 
         # # If destination exists, back it up
         # if os.path.exists(dst_path):
@@ -361,8 +345,7 @@ def sync_editorial_tree_premiere(
 
         # Remove existing directory if it exists
         if os.path.exists(dst_path):
-            #shutil.rmtree(dst_path)
-            safe_rmtree(dst_path)
+            shutil.rmtree(dst_path)
 
         # Copy the directory
         try:
@@ -403,10 +386,10 @@ if __name__ == "__main__":
     main()
 
 # ========================================================================== #
-# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
+# 53 54 52 45 4E 47 54 48 2D 49 4E 2D 4E 55 4D 42 45 52 53 C2 A9 32 30 32 35 #
 # ========================================================================== #
 
-# Changelist:       
+# Changelist:      
 
 # -------------------------------------------------------------------------- #
 # version:          0.0.1
@@ -434,10 +417,10 @@ if __name__ == "__main__":
 # comments:         prep for release - code appears to be functional
 # -------------------------------------------------------------------------- #
 # version:          1.9.9
-# modified:         2024-12-25 - 09:50:15
+# modified:         2024-12-25 - 09:50:16
 # comments:         Preparation for future features
 # -------------------------------------------------------------------------- #
 # version:          2.0.0
-# modified:         2024-12-31 - 11:17:20
+# modified:         2024-12-31 - 10:35:35
 # comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

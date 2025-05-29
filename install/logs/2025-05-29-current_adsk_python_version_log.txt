@@ -1,0 +1,22 @@
+
++ --------------------------------------------------------------------------- +
+
+  2025-05-29 11:42:36 - Reading preference file:
+  2025-05-29 11:42:37 - /Users/cutters/Documents/GitHub/LOGIK-PROJEKT-FLAVOR/install/current_adsk_python_version.pref
+  2025-05-29 11:42:37 - 
+  2025-05-29 11:42:37 - Preference file loaded:
+  2025-05-29 11:42:37 - /opt/Autodesk/python/2026.pr213/bin/python
+  2025-05-29 11:42:37 - 
+  2025-05-29 11:42:37 - Analyzing directory: /opt/Autodesk/python
+  2025-05-29 11:42:37 - Sorted contents of /opt/Autodesk/python:
+  2025-05-29 11:42:37 - 2026
+  2025-05-29 11:42:37 - 
+  2025-05-29 11:42:37 - The highest version is: 2026
+  2025-05-29 11:42:37 - 
+  2025-05-29 11:42:37 - Python version 2026 is available and executable
+  2025-05-29 11:42:37 - Updated preference file with:
+  2025-05-29 11:42:37 - /opt/Autodesk/python/2026/bin/python
+  2025-05-29 11:42:37 - 
+
++ --------------------------------------------------------------------------- +
+
