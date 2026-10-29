@@ -1,0 +1,257 @@
+{
+    "DlBookmark": {
+        "Version": 1,
+        "Sections": [
+            {
+                "Section": "Project",
+                "Bookmarks": [
+                    {
+                        "Bookmark": "flame setups",
+                        "Path": "<project home>",
+                        "Visibility": "Global"
+                    },
+                    {
+                        "Bookmark": "PROJEKTS",
+                        "Path": "/PROJEKTS/",
+                        "Visibility": "Global"
+                    },
+                    {
+                        "Bookmark": "projekt home",
+                        "Path": "/PROJEKTS/<project nickname>/",
+                        "Visibility": "Global"
+                    },
+                    {
+                        "Folder": "projekt directories",
+                        "Bookmarks": [
+                            {
+                                "Folder": "backup",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "backup-scripts",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/backup/backup-scripts",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "cfg",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "pref",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/cfg/pref",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "template",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/cfg/template",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "workstation",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/cfg/workstation",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "flame",
+                                "Bookmarks": [
+                                    {
+                                        "Folder": "archive",
+                                        "Bookmarks": [
+                                            {
+                                                "Bookmark": "scripts",
+                                                "Path": "/PROJEKTS/<project nickname>/Finish/flame/archive/scripts",
+                                                "Visibility": "Global"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Bookmark": "iterations",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/flame/iterations",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "setups",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/flame/setups",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Bookmark": "logs",
+                                "Path": "/PROJEKTS/<project nickname>/Finish/logs",
+                                "Visibility": "Global"
+                            },
+                            {
+                                "Folder": "processes",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "machine-learning",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/processes/machine-learning",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Folder": "matchmoving",
+                                        "Bookmarks": [
+                                            {
+                                                "Bookmark": "tracking_2d",
+                                                "Path": "/PROJEKTS/<project nickname>/Finish/processes/matchmoving/tracking_2d",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "tracking_3d",
+                                                "Path": "/PROJEKTS/<project nickname>/Finish/processes/matchmoving/tracking_3d",
+                                                "Visibility": "Global"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Folder": "rotoscope",
+                                        "Bookmarks": [
+                                            {
+                                                "Bookmark": "gmasks",
+                                                "Path": "/PROJEKTS/<project nickname>/Finish/processes/rotoscope/gmasks",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "raster",
+                                                "Path": "/PROJEKTS/<project nickname>/Finish/processes/rotoscope/raster",
+                                                "Visibility": "Global"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "scenes",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "3ds",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/scenes/3ds",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "alembic",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/scenes/alembic",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "baselight",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/scenes/baselight",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "blender",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/scenes/blender",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "c4d",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/scenes/c4d",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "cut",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/scenes/cut",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "fbx",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/scenes/fbx",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "geometry",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/scenes/geometry",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "houdini",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/scenes/houdini",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "maya",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/scenes/maya",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "resolve",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/scenes/resolve",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "unity",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/scenes/unity",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "unreal_engine",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/scenes/unreal_engine",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "usd",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/scenes/usd",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Bookmark": "shots",
+                                "Path": "/PROJEKTS/<project nickname>/Finish/shots",
+                                "Visibility": "Global"
+                            },
+                            {
+                                "Bookmark": "tmp",
+                                "Path": "/PROJEKTS/<project nickname>/Finish/tmp",
+                                "Visibility": "Global"
+                            },
+                            {
+                                "Folder": "utilities",
+                                "Bookmarks": [
+                                    {
+                                        "Folder": "Synergy",
+                                        "Bookmarks": [
+                                            {
+                                                "Folder": "SynColor",
+                                                "Bookmarks": [
+                                                    {
+                                                        "Folder": "Shared",
+                                                        "Bookmarks": [
+                                                            {
+                                                                "Bookmark": "transforms",
+                                                                "Path": "/PROJEKTS/<project nickname>/Finish/utilities/Synergy/SynColor/Shared/transforms",
+                                                                "Visibility": "Global"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "Bookmark": "version",
+                                "Path": "/PROJEKTS/<project nickname>/Finish/version",
+                                "Visibility": "Global"
+                            },
+                            {
+                                "Folder": "work_in_progress",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "postings",
+                                        "Path": "/PROJEKTS/<project nickname>/Finish/work_in_progress/postings",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

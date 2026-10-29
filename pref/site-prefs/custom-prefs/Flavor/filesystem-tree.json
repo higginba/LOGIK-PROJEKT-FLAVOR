@@ -1,0 +1,380 @@
+{
+  "metadata": {
+    "created_at": "2026-07-07T13:49:59.287036",
+    "created_by": "directory_structure_to_json",
+    "version": "1.0"
+  },
+  "source": {
+    "original_path": "/Users/rschnizl/dev/LOGIK-PROJEKT-20260707/cfg/site-cfg/logik-projekt-cfg/logik-projekt-templates/filesystem-templates/custom-filesystem-templates/Flavor",
+    "original_name": "Flavor",
+    "original_depth": 11,
+    "root_directory": "Flavor"
+  },
+  "analysis": {
+    "timestamp": "2026_07_07-13_49_59",
+    "total_subdirectories": 45,
+    "processed_subdirectories": 45
+  },
+  "subdirectories": [
+    {
+      "path": "backup",
+      "name": "backup",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "backup/backup-scripts",
+      "name": "backup-scripts",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "backup",
+      "type": "directory"
+    },
+    {
+      "path": "cfg",
+      "name": "cfg",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "cfg/pref",
+      "name": "pref",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "cfg",
+      "type": "directory"
+    },
+    {
+      "path": "cfg/template",
+      "name": "template",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "cfg",
+      "type": "directory"
+    },
+    {
+      "path": "cfg/workstation",
+      "name": "workstation",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "cfg",
+      "type": "directory"
+    },
+    {
+      "path": "flame",
+      "name": "flame",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "flame/archive",
+      "name": "archive",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "flame",
+      "type": "directory"
+    },
+    {
+      "path": "flame/archive/scripts",
+      "name": "scripts",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "archive",
+      "type": "directory"
+    },
+    {
+      "path": "flame/iterations",
+      "name": "iterations",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "flame",
+      "type": "directory"
+    },
+    {
+      "path": "flame/setups",
+      "name": "setups",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "flame",
+      "type": "directory"
+    },
+    {
+      "path": "logs",
+      "name": "logs",
+      "depth": 1,
+      "hasChildren": false,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "processes",
+      "name": "processes",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "processes/machine-learning",
+      "name": "machine-learning",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "processes",
+      "type": "directory"
+    },
+    {
+      "path": "processes/matchmoving",
+      "name": "matchmoving",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "processes",
+      "type": "directory"
+    },
+    {
+      "path": "processes/matchmoving/tracking_2d",
+      "name": "tracking_2d",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "matchmoving",
+      "type": "directory"
+    },
+    {
+      "path": "processes/matchmoving/tracking_3d",
+      "name": "tracking_3d",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "matchmoving",
+      "type": "directory"
+    },
+    {
+      "path": "processes/rotoscope",
+      "name": "rotoscope",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "processes",
+      "type": "directory"
+    },
+    {
+      "path": "processes/rotoscope/gmasks",
+      "name": "gmasks",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "rotoscope",
+      "type": "directory"
+    },
+    {
+      "path": "processes/rotoscope/raster",
+      "name": "raster",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "rotoscope",
+      "type": "directory"
+    },
+    {
+      "path": "scenes",
+      "name": "scenes",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "scenes/3ds",
+      "name": "3ds",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes",
+      "type": "directory"
+    },
+    {
+      "path": "scenes/alembic",
+      "name": "alembic",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes",
+      "type": "directory"
+    },
+    {
+      "path": "scenes/baselight",
+      "name": "baselight",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes",
+      "type": "directory"
+    },
+    {
+      "path": "scenes/blender",
+      "name": "blender",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes",
+      "type": "directory"
+    },
+    {
+      "path": "scenes/c4d",
+      "name": "c4d",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes",
+      "type": "directory"
+    },
+    {
+      "path": "scenes/cut",
+      "name": "cut",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes",
+      "type": "directory"
+    },
+    {
+      "path": "scenes/fbx",
+      "name": "fbx",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes",
+      "type": "directory"
+    },
+    {
+      "path": "scenes/geometry",
+      "name": "geometry",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes",
+      "type": "directory"
+    },
+    {
+      "path": "scenes/houdini",
+      "name": "houdini",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes",
+      "type": "directory"
+    },
+    {
+      "path": "scenes/maya",
+      "name": "maya",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes",
+      "type": "directory"
+    },
+    {
+      "path": "scenes/resolve",
+      "name": "resolve",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes",
+      "type": "directory"
+    },
+    {
+      "path": "scenes/unity",
+      "name": "unity",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes",
+      "type": "directory"
+    },
+    {
+      "path": "scenes/unreal_engine",
+      "name": "unreal_engine",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes",
+      "type": "directory"
+    },
+    {
+      "path": "scenes/usd",
+      "name": "usd",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes",
+      "type": "directory"
+    },
+    {
+      "path": "shots",
+      "name": "shots",
+      "depth": 1,
+      "hasChildren": false,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "tmp",
+      "name": "tmp",
+      "depth": 1,
+      "hasChildren": false,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "utilities",
+      "name": "utilities",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "utilities/Synergy",
+      "name": "Synergy",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "utilities",
+      "type": "directory"
+    },
+    {
+      "path": "utilities/Synergy/SynColor",
+      "name": "SynColor",
+      "depth": 3,
+      "hasChildren": true,
+      "parent": "Synergy",
+      "type": "directory"
+    },
+    {
+      "path": "utilities/Synergy/SynColor/Shared",
+      "name": "Shared",
+      "depth": 4,
+      "hasChildren": true,
+      "parent": "SynColor",
+      "type": "directory"
+    },
+    {
+      "path": "utilities/Synergy/SynColor/Shared/transforms",
+      "name": "transforms",
+      "depth": 5,
+      "hasChildren": false,
+      "parent": "Shared",
+      "type": "directory"
+    },
+    {
+      "path": "version",
+      "name": "version",
+      "depth": 1,
+      "hasChildren": false,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "work_in_progress",
+      "name": "work_in_progress",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "work_in_progress/postings",
+      "name": "postings",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "work_in_progress",
+      "type": "directory"
+    }
+  ]
+}

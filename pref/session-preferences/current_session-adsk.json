@@ -1,0 +1,19 @@
+{
+    "Name": "54321_FlameProject_2026_2_2_ryans-air",
+    "ProjectDir": "/var/opt/Autodesk/flame/projects/54321_FlameProject_2026_2_2_ryans-air",
+    "SetupDir": "/var/opt/Autodesk/flame/projects/54321_FlameProject_2026_2_2_ryans-air/setups",
+    "MediaDir": "/Volumes/StorageMedia/54321_FlameProject/media",
+    "Resolution": {
+        "FrameWidth": 1920,
+        "FrameHeight": 1080,
+        "FrameDepth": "16-bit fp",
+        "AspectRatio": 1.7777778,
+        "FieldDominance": "PROGRESSIVE"
+    },
+    "StartFrame": 1001,
+    "ConfigTemplate": "1920x1080@23976p.cfg",
+    "FrameRate": "23.976 fps",
+    "IntermediatesProfile": 65797,
+    "FloatIntermediates": 1120376,
+    "ColourPolicyName": "ACES 2.0"
+}
